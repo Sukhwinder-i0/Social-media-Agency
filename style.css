@@ -1,0 +1,362 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.conatiner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem 0 1rem 0;
+    align-items: center;
+    background-color: #CCF0FF;
+    height: 8vh;
+}
+
+
+
+.navbar .logo, img {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3%;
+
+}
+
+.nav-menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    transform: scale(1.1);
+    color: #0ABFDC;
+}
+
+.search-bar {
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.search-bar input {
+    height: 2rem;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.search-bar i {
+    background-color: rgb(228, 218, 218);
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    height: 1.7rem;
+    width: auto;
+    
+}
+
+.navbar button {
+    border: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #0028FB;
+    color: white;
+    border-radius: 3rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.banner {
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* border: 2px solid red; */
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.left {
+    position: relative;
+    width: 50%;
+    height: auto;
+    border: 2px solid green;
+    background-image: url("./media/banner-left.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: #CCF0FF; */
+}
+
+
+.right {
+    position: relative;
+    border: 2px solid black;
+    width: 50%;
+    height: auto;
+    background-image: url("./media/banner-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-color: #CCF0FF; */
+
+}
+
+/* .left img, .right img {
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+    /* z-index: -10; */
+
+
+.linkedin-logo {
+    position: absolute;
+    width: 4rem;
+    top: 20%;
+    right: 25%;
+    height: 4rem;
+    /* border: 2px solid red; */
+    background-image: url("./media/linkedin-logo-linkedin-icon-transparent-free-png.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: animeX 2s infinite ease-in-out alternate;
+}
+
+.yt-logo {
+    position: absolute;
+    width: 4rem;
+    top: 35%;
+    right: 20%;
+    height: 4rem;
+    /* border: 2px solid red; */
+    background-image: url("./media/youtube-logo-youtube-icon-transparent-free-png.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: animeY 2s infinite ease-in-out alternate;
+}
+
+.x-logo {
+    position: absolute;
+    width: 3rem;
+    top: 40%;
+    right: 35%;
+    height: 3rem;
+    /* border: 2px solid red; */
+    background-image: url("./media/vecteezy_twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x_31737215.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: animeX 2s infinite ease-in-out alternate;
+}
+
+.pint-logo {
+    position: absolute;
+    width: 3rem;
+    top: 56%;
+    right: 25%;
+    height: 3rem;
+    /* border: 2px solid red; */
+    background-image: url("./media/vecteezy_pinterest-png-icon_16716461.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: animeY 2s infinite ease-in-out alternate;
+}
+
+.fb-logo {
+    position: absolute;
+    width: 2rem;
+    top: 45%;
+    right: 10%;
+    height: 2rem;
+    /* border: 2px solid red; */
+    background-image: url("./media/vecteezy_facebook-png-icon_16716481.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: animeX 2s infinite ease-in-out alternate;
+}
+
+.snap-logo {
+    position: absolute;
+    width: 3rem;
+    top: 64%;
+    right: 40%;
+    height: 3rem;
+    /* border: 2px solid red; */
+    background-image: url("./media/vecteezy_snapchat-png-icon_16716454.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: upToDown linear forwards, floating infinite ease 4s;
+    animation: animeX 2s infinite ease-in-out alternate;
+}
+
+.insta-logo {
+    position: absolute;
+    width: 3rem;
+    top: 75%;
+    right: 20%;
+    height: 3rem;
+    /* border: 2px solid red; */
+    background-image: url("./media/vecteezy_instagram-logo-3d-illustration_12493083.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: animeY 2s infinite ease-in-out alternate;
+}
+
+
+
+@keyframes animeY {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        /* transform: translateY(20px); */
+        transform: translateY(20px);
+    }
+}
+@keyframes animeX {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        /* transform: translateY(20px); */
+        transform: translateX(20px);
+    }
+}
+
+
+/* @keyframes upToDown {
+    from {
+        opacity: 0;
+        transform: translate(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(4rem);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+    25% {
+        transform: translate(5%, 15%) rotate(360deg);
+    }
+    50% {
+        transform: translate(10%, 5%) rotate(360deg);
+    }
+    75% {
+        transform: translate(0%, 15%) rotate(360deg);
+    }
+    100% {
+        transform: translate(0%, 0%) rotate(360deg);
+    }
+} */
+
+
+.texts {
+    position: relative;
+}
+
+.welcome {
+    margin: 3rem 0 0 2rem;;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 10rem;
+
+}
+
+hr {
+    width: 6rem;
+    margin-left: 2rem;
+    border: 1px solid #0028FB;
+}
+
+.title {
+    display: flex;
+    margin: 0 0 0 2rem;
+    align-items: center;
+}
+.myzx {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #0028FB;
+    letter-spacing: .2rem;
+}
+
+.media {
+    font-size: 3rem;
+    font-weight: 580;
+    letter-spacing: .2rem;
+    margin-left: 1rem;
+}
+
+.sma {
+    margin: 0 0 0 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: #0028FB;
+    word-spacing: 0.3rem;
+}
+
+ .tagline {
+    margin: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.register {
+    border: 0;
+    border-radius: 10px;
+    padding: .5rem 1.8rem .5rem 1.8rem;
+    background-color: #0028FB;
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.banner-logo {
+    position: absolute;
+    width: 199px;
+    height: 100px;
+    background-image: url("./media/MyzX\ \(2\)\ cropped.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0%;
+    right: 0%;
+}
+
+
+.services {
+    width: 100%;
+    height: 8vh;
+    background-color: #CCF0FF;
+    margin-top: 0;
+}
